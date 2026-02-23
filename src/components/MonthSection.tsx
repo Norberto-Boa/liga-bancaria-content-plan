@@ -13,7 +13,7 @@ export function MonthSection({ monthPlan }: Props) {
     null,
   );
   return (
-    <section className="py-12 border-b border-gray-200">
+    <section className="py-8 border-b border-gray-200">
       {/* Cabecalho do mes */}
       <div className="mb-8">
         <h2 className="text-3xl font-bold text-primary">
