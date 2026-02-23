@@ -2,7 +2,7 @@ import type { MonthPlan } from "@/data/contentPlan";
 import { ContentCard } from "./ContentCard";
 import { useState } from "react";
 import type { ContentItem } from "../data/contentPlan";
-import { ContentModal } from "./contentModal";
+import { ContentModal } from "./ContentModal";
 
 interface Props {
   monthPlan: MonthPlan;
