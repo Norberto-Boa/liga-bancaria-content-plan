@@ -2,7 +2,6 @@ import {
   useInView,
   useMotionValue,
   useSpring,
-  motion,
   useMotionValueEvent,
 } from "framer-motion";
 import { useEffect, useRef, useState } from "react";
