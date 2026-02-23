@@ -30,7 +30,8 @@ export const contentPlan: MonthPlan[] = [
       {
         type: "Static",
         title: "Abertura Oficial da Temporada 2027",
-        image: "/images/jornada.jpg",
+        image:
+          "https://images.unsplash.com/photo-1771308457245-36bda18c21d9?w=1200&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwzfHx8ZW58MHx8fHx8",
         caption:
           "A temporada 2027 da Liga Bancária começa oficialmente. Prepare-se para novas emoções e competitividade.",
         platforms: ["instagram", "facebook", "whatsapp"],
