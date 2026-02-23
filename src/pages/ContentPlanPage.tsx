@@ -17,17 +17,19 @@ export function ContentPlanPage() {
           </p>
         </div>
 
+        <div className="h-px bg-gray-300 mt-4 mb-8" />
+
         {/* Indicators */}
         <div className="mt-4 grid grid-cols-1 sm:grid-cols-3 gap-6">
           <div className="bg-white rounded-xl shadow-sm p-6">
-            <p>Meses Planeados</p>
+            <p className="font-medium">Meses Planeados</p>
             <p className="text-2xl font-bold text-primary">
               {contentPlan.length}
             </p>
           </div>
 
           <div className="bg-white rounded-xl shadow-sm p-6">
-            <p>Conteúdos Planejados</p>
+            <p className="font-medium">Conteúdos Planejados</p>
             <p className="text-2xl font-bold text-primary">
               {contentPlan.reduce(
                 (acc, month) => acc + month.contents.length,
@@ -37,7 +39,7 @@ export function ContentPlanPage() {
           </div>
 
           <div className="bg-white rounded-xl shadow-sm p-6">
-            <p>Reels Planejados</p>
+            <p className="font-medium">Reels Planejados</p>
             <p className="text-2xl font-bold text-primary">
               {contentPlan.reduce(
                 (acc, m) =>
@@ -50,6 +52,7 @@ export function ContentPlanPage() {
 
         {/* Tabs */}
         <div className="w-full">
+          <div className="h-px bg-gray-300 mt-8 mb-4" />
           <MonthTabs />
         </div>
       </div>
