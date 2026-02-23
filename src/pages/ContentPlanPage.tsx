@@ -1,5 +1,7 @@
+import { AnimatedCounter } from "@/components/AnimatedCounter";
 import { MonthTabs } from "@/components/MonthTabs";
 import { contentPlan } from "@/data/contentPlan";
+import { motion } from "framer-motion";
 
 export function ContentPlanPage() {
   return (
@@ -23,30 +25,46 @@ export function ContentPlanPage() {
         <div className="mt-4 grid grid-cols-1 sm:grid-cols-3 gap-6">
           <div className="bg-white rounded-xl shadow-sm p-6">
             <p className="font-medium">Meses Planeados</p>
-            <p className="text-2xl font-bold text-primary">
-              {contentPlan.length}
-            </p>
+            <motion.div
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ duration: 0.25, ease: "easeOut" }}
+            >
+              <AnimatedCounter value={contentPlan.length} />
+            </motion.div>
           </div>
 
           <div className="bg-white rounded-xl shadow-sm p-6">
             <p className="font-medium">Conteúdos Planejados</p>
-            <p className="text-2xl font-bold text-primary">
-              {contentPlan.reduce(
-                (acc, month) => acc + month.contents.length,
-                0,
-              )}
-            </p>
+            <motion.div
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ duration: 0.25, ease: "easeOut" }}
+            >
+              <AnimatedCounter
+                value={contentPlan.reduce(
+                  (acc, month) => acc + month.contents.length,
+                  0,
+                )}
+              />
+            </motion.div>
           </div>
 
           <div className="bg-white rounded-xl shadow-sm p-6">
             <p className="font-medium">Reels Planejados</p>
-            <p className="text-2xl font-bold text-primary">
-              {contentPlan.reduce(
-                (acc, m) =>
-                  acc + m.contents.filter((c) => c.type === "Dynamic").length,
-                0,
-              )}
-            </p>
+            <motion.div
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ duration: 0.25, ease: "easeOut" }}
+            >
+              <AnimatedCounter
+                value={contentPlan.reduce(
+                  (acc, m) =>
+                    acc + m.contents.filter((c) => c.type === "Dynamic").length,
+                  0,
+                )}
+              />
+            </motion.div>
           </div>
         </div>
 
