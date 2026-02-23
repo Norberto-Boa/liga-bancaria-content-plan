@@ -17,7 +17,7 @@ export function ContentCard({ item, onClick }: Props) {
       <div className="p-4 space-y-4">
         {item.type === "Static" && item.image && (
           <img
-            src={item.image}
+            src={item.image.src}
             alt={item.title}
             className="rounded-lg h-48 w-full object-cover"
           />

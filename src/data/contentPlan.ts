@@ -75,8 +75,8 @@ export const contentPlan: MonthPlan[] = [
         type: "Static",
         title: "Classificação Geral – Fevereiro 2027",
         image: {
-          src: "https://images.unsplash.com/photo-1771308457245-36bda18c21d9?w=1200&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwzfHx8ZW58MHx8fHx8",
-          aspectRatio: "4:5",
+          src: "https://scontent.fmpm3-1.fna.fbcdn.net/v/t39.30808-6/590814496_1173849231553266_5668506900928601354_n.jpg?stp=dst-jpg_p526x296_tt6&_nc_cat=105&ccb=1-7&_nc_sid=7b2446&_nc_ohc=hpqHASjguyAQ7kNvwG2fE4u&_nc_oc=AdmFIBgQ2GR-NgLVdbNkkyEBXUnpwNeK2MBTg2pNZR4T4Djp4-mVoM1gOcvyzZJ9YHE&_nc_zt=23&_nc_ht=scontent.fmpm3-1.fna&_nc_gid=3ojulUroVtU-dM-xj2-3lA&oh=00_AftiWsve-PZtZL39LkR3icvJJIQ2c3GLIxtPPm9AZmN92A&oe=69A1B2EC",
+          aspectRatio: "1:1",
         },
         caption:
           "Atualização oficial da classificação geral da Liga Bancária 2027.",

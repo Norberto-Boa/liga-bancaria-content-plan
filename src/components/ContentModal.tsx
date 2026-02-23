@@ -28,7 +28,7 @@ export function ContentModal({ item, open, onOpenChange }: Props) {
     <Dialog.Root open={open} onOpenChange={onOpenChange}>
       <Dialog.Portal>
         <Dialog.Overlay className="fixed inset-0 bg-darker/60 backdrop-blur-sm">
-          <Dialog.Content className="fixed top-1/2 left-1/2 w-[90%] max-w-2xl -translate-x-1/2 -translate-y-1/2 bg-white rounded-xl p-6 shadow-2xl space-y-4 ">
+          <Dialog.Content className="fixed top-1/2 left-1/2 w-[70%] max-w-2xl -translate-x-1/2 -translate-y-1/2 bg-white rounded-xl p-6 shadow-2xl space-y-4 ">
             <div className="flex justify-between items-center">
               <Dialog.Title className="text-xl font-bold text-primary">
                 {item.title}
@@ -38,13 +38,16 @@ export function ContentModal({ item, open, onOpenChange }: Props) {
                 <X />
               </Dialog.Close>
             </div>
-
             {item.type === "Static" && item.image && (
-              <img
-                src={item.image}
-                alt={item.title}
-                className="rounded-lg w-full h-60 object-cover"
-              />
+              <div
+                className={`w-full overflow-hidden rounded-lg ${item.image.aspectRatio === "1:1" ? "aspect-square" : "aspect-4/5"}`}
+              >
+                <img
+                  src={item.image.src}
+                  alt={item.title}
+                  className="rounded-lg w-full object-cover"
+                />
+              </div>
             )}
 
             <p className="text-gray-700">{item.caption}</p>
