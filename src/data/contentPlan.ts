@@ -4,10 +4,15 @@ export interface Platform {
   icon: string;
 }
 
+export interface ImageProps {
+  src: string;
+  aspectRatio: "1:1" | "4:5";
+}
+
 export interface ContentItem {
   type: ContentType;
   title: string;
-  image?: string;
+  image?: ImageProps;
   caption: string;
   script?: string[];
   platforms: Platform[];
@@ -30,8 +35,10 @@ export const contentPlan: MonthPlan[] = [
       {
         type: "Static",
         title: "Abertura Oficial da Temporada 2027",
-        image:
-          "https://images.unsplash.com/photo-1771308457245-36bda18c21d9?w=1200&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwzfHx8ZW58MHx8fHx8",
+        image: {
+          src: "https://images.unsplash.com/photo-1771308457245-36bda18c21d9?w=1200&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwzfHx8ZW58MHx8fHx8",
+          aspectRatio: "4:5",
+        },
         caption:
           "A temporada 2027 da Liga Bancária começa oficialmente. Prepare-se para novas emoções e competitividade.",
         platforms: [
@@ -67,7 +74,10 @@ export const contentPlan: MonthPlan[] = [
       {
         type: "Static",
         title: "Classificação Geral – Fevereiro 2027",
-        image: "/images/standings.jpg",
+        image: {
+          src: "https://images.unsplash.com/photo-1771308457245-36bda18c21d9?w=1200&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwzfHx8ZW58MHx8fHx8",
+          aspectRatio: "4:5",
+        },
         caption:
           "Atualização oficial da classificação geral da Liga Bancária 2027.",
         platforms: [
