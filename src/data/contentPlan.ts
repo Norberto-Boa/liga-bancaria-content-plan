@@ -10,7 +10,7 @@ export interface ContentItem {
   image?: string;
   caption: string;
   script?: string[];
-  platforms: string[];
+  platforms: Platform[];
 }
 
 export interface MonthPlan {
@@ -34,7 +34,11 @@ export const contentPlan: MonthPlan[] = [
           "https://images.unsplash.com/photo-1771308457245-36bda18c21d9?w=1200&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwzfHx8ZW58MHx8fHx8",
         caption:
           "A temporada 2027 da Liga Bancária começa oficialmente. Prepare-se para novas emoções e competitividade.",
-        platforms: ["instagram", "facebook", "whatsapp"],
+        platforms: [
+          { name: "instagram", icon: "instagram" },
+          { name: "facebook", icon: "facebook" },
+          { name: "whatsapp", icon: "whatsapp" },
+        ],
       },
       {
         type: "Dynamic",
@@ -47,7 +51,10 @@ export const contentPlan: MonthPlan[] = [
         ],
         caption:
           "Chegou o momento de dar início à temporada 2027 da Liga Bancária!",
-        platforms: ["instagram", "facebook"],
+        platforms: [
+          { name: "instagram", icon: "instagram" },
+          { name: "facebook", icon: "facebook" },
+        ],
       },
     ],
   },
@@ -63,7 +70,11 @@ export const contentPlan: MonthPlan[] = [
         image: "/images/standings.jpg",
         caption:
           "Atualização oficial da classificação geral da Liga Bancária 2027.",
-        platforms: ["instagram", "facebook", "linkedin"],
+        platforms: [
+          { name: "instagram", icon: "instagram" },
+          { name: "facebook", icon: "facebook" },
+          { name: "whatsapp", icon: "whatsapp" },
+        ],
       },
     ],
   },

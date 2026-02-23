@@ -23,7 +23,7 @@ export function ContentCard({ item, onClick }: Props) {
           />
         )}
         <div className="flex items-center justify-between">
-          <h3 className="font-semibold text-lg text-Dark">{item.title}</h3>
+          <h3 className="font-semibold text-lg text-darker">{item.title}</h3>
 
           {item.type === "Static" ? (
             <Badge className="bg-secondary text-black">Estatico</Badge>

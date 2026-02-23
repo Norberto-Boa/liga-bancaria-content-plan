@@ -7,7 +7,7 @@
 @theme {
   --primary: #0b3c74;
   --secondary: #f2b705;
-  --dark: #1a1a1a;
+  --color-darker: #1a1a1a;
 }
 
 @theme inline {
