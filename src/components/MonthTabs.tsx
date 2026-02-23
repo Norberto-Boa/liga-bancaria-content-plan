@@ -1,6 +1,7 @@
 import { contentPlan } from "@/data/contentPlan";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "./ui/tabs";
 import { MonthSection } from "./MonthSection";
+import { AnimatePresence, motion } from "framer-motion";
 
 export function MonthTabs() {
   return (
@@ -23,7 +24,17 @@ export function MonthTabs() {
       {/* Conteúdo do mês */}
       {contentPlan.map((month) => (
         <TabsContent key={month.month} value={`${month.month}-${month.year}`}>
-          <MonthSection monthPlan={month} />
+          <AnimatePresence mode="wait">
+            <motion.div
+              key={`${month.month}-${month.year}`}
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              exit={{ opacity: 0, y: -20 }}
+              transition={{ duration: 0.35, ease: "easeOut" }}
+            >
+              <MonthSection monthPlan={month} />
+            </motion.div>
+          </AnimatePresence>
         </TabsContent>
       ))}
     </Tabs>
