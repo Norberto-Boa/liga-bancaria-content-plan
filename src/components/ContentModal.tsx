@@ -28,39 +28,53 @@ export function ContentModal({ item, open, onOpenChange }: Props) {
     <Dialog.Root open={open} onOpenChange={onOpenChange}>
       <Dialog.Portal>
         <Dialog.Overlay className="fixed inset-0 bg-darker/60 backdrop-blur-sm">
-          <Dialog.Content className="fixed top-1/2 left-1/2 w-[70%] max-w-2xl -translate-x-1/2 -translate-y-1/2 bg-white rounded-xl p-6 shadow-2xl space-y-4 ">
-            <div className="flex justify-between items-center">
-              <Dialog.Title className="text-xl font-bold text-primary">
+          <Dialog.Content
+            className="fixed
+              top-1/2 left-1/2
+              max-w-lg
+              -translate-x-1/2 -translate-y-1/2
+              bg-white
+              rounded-xl
+              shadow-2xl
+              flex flex-col
+              max-h-[95vh]
+              overflow-hidden
+              "
+          >
+            <div className="flex justify-between items-center p-4 border-b">
+              <Dialog.Title className="text-lg font-bold text-primary">
                 {item.title}
               </Dialog.Title>
 
-              <Dialog.Close>
+              <Dialog.Close className="text-gray-500 hover:text-black cursor-pointer">
                 <X />
               </Dialog.Close>
             </div>
-            {item.type === "Static" && item.image && (
-              <div
-                className={`w-full overflow-hidden rounded-lg ${item.image.aspectRatio === "1:1" ? "aspect-square" : "aspect-4/5"}`}
-              >
-                <img
-                  src={item.image.src}
-                  alt={item.title}
-                  className="rounded-lg w-full object-cover"
-                />
-              </div>
-            )}
 
-            <p className="text-gray-700">{item.caption}</p>
+            <div className="flex-1 px-4 py-2 space-y-3 overflow-y-auto sm:overflow-hidden">
+              {item.type === "Static" && item.image && (
+                <div
+                  className={`w-full ${item.image.aspectRatio === "1:1" ? "max-w-105" : "max-w-74"} mx-auto mt-4 overflow-hidden rounded-lg ${item.image.aspectRatio === "1:1" ? "aspect-square" : "aspect-4/5"}`}
+                >
+                  <img
+                    src={item.image.src}
+                    alt={item.title}
+                    className={`rounded-lg w-full object-cover ${item.image.aspectRatio === "1:1" ? "aspect-square" : "aspect-4/5"}`}
+                  />
+                </div>
+              )}
 
-            {item.type === "Dynamic" && (
-              <ul className="list-disc ml-5 space-y-2 text-gray-700">
-                {item.script?.map((line, index) => (
-                  <li key={index}>{line}</li>
-                ))}
-              </ul>
-            )}
+              <p className="text-gray-700">{item.caption}</p>
 
-            <div className="flex gap-3 text-gray-500 mt-4">
+              {item.type === "Dynamic" && (
+                <ul className="list-disc ml-5 space-y-2 text-gray-700">
+                  {item.script?.map((line, index) => (
+                    <li key={index}>{line}</li>
+                  ))}
+                </ul>
+              )}
+            </div>
+            <div className="px-5 py-3 border-t flex gap-3 text-gray-500">
               {item.platforms.map((p) => (
                 <div key={p.name}>{renderIcon(p)}</div>
               ))}
