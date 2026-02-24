@@ -27,20 +27,35 @@ export interface MonthPlan {
 
 export const contentPlan: MonthPlan[] = [
   {
-    month: "Janeiro",
-    year: 2027,
+    month: "Março",
+    year: 2025,
     summary:
-      "Mês de abertura da temporada 2027, ativação institucional e lançamento oficial da competição.",
+      "Mês de abertura da temporada 2026, ativação institucional e lançamento oficial da competição.",
     contents: [
       {
         type: "Static",
-        title: "Abertura Oficial da Temporada 2027",
+        title: "Rectrospectiva 2025",
         image: {
-          src: "https://images.unsplash.com/photo-1771308457245-36bda18c21d9?w=1200&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwzfHx8ZW58MHx8fHx8",
+          src: "/janeiro/champs.jpg",
           aspectRatio: "4:5",
         },
         caption:
-          "A temporada 2027 da Liga Bancária começa oficialmente. Prepare-se para novas emoções e competitividade.",
+          "Relembre os momentos mais emocionantes da temporada 2026 da Liga Bancária!",
+        platforms: [
+          { name: "instagram", icon: "instagram" },
+          { name: "facebook", icon: "facebook" },
+          { name: "whatsapp", icon: "whatsapp" },
+        ],
+      },
+      {
+        type: "Static",
+        title: "Estatisticas da Temporada 2025",
+        image: {
+          src: "/janeiro/estatisticas.jpg",
+          aspectRatio: "1:1",
+        },
+        caption:
+          "Chegou o momento de dar início à temporada 2027 da Liga Bancária!",
         platforms: [
           { name: "instagram", icon: "instagram" },
           { name: "facebook", icon: "facebook" },
@@ -49,25 +64,106 @@ export const contentPlan: MonthPlan[] = [
       },
       {
         type: "Dynamic",
-        title: "Reel: O Arranque da Época 2027",
+        title: "Temporada em 20s",
         script: [
-          "Cena 1: Plano geral do campo com logo Liga",
-          "Cena 2: Entrada das equipas",
-          "Cena 3: Momento de golo",
-          "Encerramento com CTA para seguir a Liga",
+          "Cena 1: Apresentacao do titulo",
+          "Cena 2: Passagem de imagens rapidamente mostrando alguns momentos da liga",
+          "Cena 3: Apresentacao do slogan da liga",
+          "Cena 4: Videos de algumas jogadas de 2025",
+          "Cena 5: Prontos para temporada 2026? #LigaBancaria2026",
         ],
         caption:
-          "Chegou o momento de dar início à temporada 2027 da Liga Bancária!",
+          "Chegou o momento de dar início à temporada 2026 da Liga Bancária!",
         platforms: [
           { name: "instagram", icon: "instagram" },
           { name: "facebook", icon: "facebook" },
+          { name: "whatsapp", icon: "whatsapp" },
+        ],
+      },
+      {
+        type: "Static",
+        title: "Destaque da Semana",
+        image: {
+          src: "/janeiro/destaque-da-semana.jpg",
+          aspectRatio: "1:1",
+        },
+        caption:
+          "Lembras da Época do Stimen? Comenta o jogo que ele te surpreendeu mais!",
+        platforms: [
+          { name: "instagram", icon: "instagram" },
+          { name: "facebook", icon: "facebook" },
+          { name: "whatsapp", icon: "whatsapp" },
+        ],
+      },
+      {
+        type: "Static",
+        title: "Treinadores em Ação [Carrossel]",
+        image: {
+          src: "/janeiro/treinadores-carousel.jpg",
+          aspectRatio: "1:1",
+        },
+        caption:
+          "Conheça os treinadores que estão por trás das estratégias vencedoras da Liga Bancária 2026!",
+        platforms: [
+          { name: "instagram", icon: "instagram" },
+          { name: "facebook", icon: "facebook" },
+          { name: "whatsapp", icon: "whatsapp" },
+        ],
+      },
+      {
+        type: "Dynamic",
+        title: "Momentos Quentes🔥 | Highlights",
+        script: [
+          "Cena 1: Apresentacao do titulo",
+          "Cena 2: Video - 01 [Golo]",
+          "Cena 3: Video - 02 [Defesa Incrivel]",
+          "Cena 4: Video - 03 [Jogada de Mestre]",
+          "Cena 5: Video - 04 [Momento Engracado]",
+        ],
+        caption:
+          "Quem disse que liga bancária não tem emoção? Confira os alguns momentos quentes da temporada 2026! #LigaBancaria2026",
+        platforms: [
+          { name: "instagram", icon: "instagram" },
+          { name: "facebook", icon: "facebook" },
+          { name: "whatsapp", icon: "whatsapp" },
+        ],
+      },
+      {
+        type: "Static",
+        title:
+          "Quem fez a liga acontecer? Conheça os membros da comissao [Carrossel]",
+        image: {
+          src: "/janeiro/treinadores-carousel.jpg",
+          aspectRatio: "1:1",
+        },
+        caption:
+          "Conhece os membros da comissão organizadora que estiveram por trás do sucesso da Liga Bancária 2025! #LigaBancaria2026",
+        platforms: [
+          { name: "instagram", icon: "instagram" },
+          { name: "facebook", icon: "facebook" },
+          { name: "whatsapp", icon: "whatsapp" },
+        ],
+      },
+      {
+        type: "Static",
+        title: "Figura da Semana: Demostracao de um membro!",
+        image: {
+          src: "/janeiro/treinadores-carousel.jpg",
+          aspectRatio: "1:1",
+        },
+        caption:
+          "Uma Caption relacionada a figura da semana, pode ser um jogador, treinador ou membro da comissao organizadora. #LigaBancaria2026",
+        platforms: [
+          { name: "instagram", icon: "instagram" },
+          { name: "facebook", icon: "facebook" },
+          { name: "whatsapp", icon: "whatsapp" },
         ],
       },
     ],
   },
   {
     month: "Fevereiro",
-    year: 2027,
+    year: 2026,
     summary:
       "Consolidação da competição, atualização de classificações e destaque individual.",
     contents: [
