@@ -133,7 +133,7 @@ export const contentPlan: MonthPlan[] = [
         title:
           "Quem fez a liga acontecer? Conheça os membros da comissao [Carrossel]",
         image: {
-          src: "/janeiro/treinadores-carousel.jpg",
+          src: "/janeiro/membros-da-comissao.jpg",
           aspectRatio: "1:1",
         },
         caption:
