@@ -148,7 +148,7 @@ export const contentPlan: MonthPlan[] = [
         type: "Static",
         title: "Figura da Semana: Demostracao de um membro!",
         image: {
-          src: "/janeiro/treinadores-carousel.jpg",
+          src: "/janeiro/figura-da-semana.jpg",
           aspectRatio: "1:1",
         },
         caption:
@@ -171,7 +171,7 @@ export const contentPlan: MonthPlan[] = [
         type: "Static",
         title: "Lista de Melhores Marcadores da Temporada 2025",
         image: {
-          src: "/janeiro/treinadores-carousel.jpg",
+          src: "/abril/melhores-marcadores.jpg",
           aspectRatio: "1:1",
         },
         caption:
@@ -207,7 +207,7 @@ export const contentPlan: MonthPlan[] = [
         title:
           "Figura da Semana: Demostracao de um membro[Jogador, Treinador ou Comissao Organizadora]!",
         image: {
-          src: "/janeiro/destaque-da-semana.jpg",
+          src: "/abril/figura-da-semana-01.jpg",
           aspectRatio: "1:1",
         },
         caption:
@@ -241,7 +241,7 @@ export const contentPlan: MonthPlan[] = [
         type: "Static",
         title: "Liga Bancaria do lado de quem assiste! [Carrossel]",
         image: {
-          src: "/janeiro/treinadores-carousel.jpg",
+          src: "/abril/claque-01.webp",
           aspectRatio: "1:1",
         },
         caption:
@@ -254,9 +254,9 @@ export const contentPlan: MonthPlan[] = [
       },
       {
         type: "Static",
-        title: "Lista das equipes da primeira divisao![Carrossel]",
+        title: "Lista das equipes da primeira divisao!",
         image: {
-          src: "/janeiro/treinadores-carousel.jpg",
+          src: "/abril/equipas-divisao.jpg",
           aspectRatio: "1:1",
         },
         caption:
@@ -269,9 +269,9 @@ export const contentPlan: MonthPlan[] = [
       },
       {
         type: "Static",
-        title: "Lista das equipes da segunda divisao![Carrossel]",
+        title: "Lista das equipes da segunda divisao!",
         image: {
-          src: "/janeiro/treinadores-carousel.jpg",
+          src: "/abril/equipas-divisao.jpg",
           aspectRatio: "1:1",
         },
         caption:
